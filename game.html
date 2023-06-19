@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>Color Game</title>
+    </head>
+    <link rel="stylesheet" href="colorgame.css" type="text/css"> 
+  <body class="bg">
+        <h1 class="ti">COLOR IDENTIFICATION</h1>
+    <div class="cl">
+        <div class="full">
+        <div class="cl">
+            <button class="bo" value="red" id="b1"></button>
+            <input class="box" type="text" id="t1">
+        </div>
+        <div class="cl">
+            <button class="bo1" value="yellow" id="b2"></button>
+            <input class="box" type="text" id="t2">
+        </div>
+        <div class="cl">
+            <button class="bo2" value="brown" id="b3"></button>
+            <input class="box" id="t3" type="text">
+        </div>
+        <div class="cl">
+            <button class="bo3" value="blue" id="b4"></button>
+            <input class="box" id="t4" type="text">
+        </div>
+        <div class="cl">
+            <button class="bo4" value="violet" id="b5"></button>
+            <input class="box" id="t5" type="text">
+        </div>
+        <div class="cl">
+            <button class="bo5" value="green" id="b6"></button>
+            <input class="box" id="t6" type="text">
+        </div>
+        <div class="cl" >
+            <button class="bo6" value="grey" id="b7"></button>
+            <input class="box" type="text" id="t7">
+        </div>
+        <div class="cl">
+            <button class="bo7" value="orange" id="b8"></button>
+            <input class="box" type="text" id="t8">
+        </div>
+        <div class="cl">
+            <button class="bo8" value="skyblue" id="b9"></button>
+            <input class="box" type="text" id="t9">
+        </div>
+        <div class="cl">
+            <button class="bo9" value="pink" id="b10"></button>
+            <input class="box" type="text" id="t10">
+        </div>
+        <button class="s" onclick="point()">Submit</button>
+    </div>
+    <div class="hid" id="hid1">
+    <h1>Your Points</h1>
+    <h2 id="p" style="text-align: center;"></h2>
+    <p id="p1"></p>
+    </div>
+</div>
+</body>
+    <script>
+         let a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11;
+        function point(){
+            let a=document.getElementById("b1").value;
+            let b1=document.getElementById("t1").value;
+            if(a==b1){  
+                 a2=1;
+            }
+            else{
+                a2=0;
+            }
+            let e=document.getElementById("b2").value;
+            let f=document.getElementById("t2").value;
+            if(e==f){
+                a4=1;
+            }
+            else{
+                a4=0;
+            }
+            let g=document.getElementById("b3").value;
+            let h=document.getElementById("t3").value;
+            if(g==h){
+                a5=1;
+            }
+            else{
+                a5=0;
+            }
+            let i=document.getElementById("b4").value;
+            let j=document.getElementById("t4").value;
+            if(i==j){
+                a6=1;
+            }
+            else{
+                a6=0;
+            }
+            let k=document.getElementById("b5").value;
+            let l=document.getElementById("t5").value;
+            if(k==l){
+                a7=1;
+            }
+            else{
+                a7=0;
+            }
+            let m=document.getElementById("b6").value;
+            let n=document.getElementById("t6").value;
+            if(m==n){
+                a8=1;
+            }
+            else{
+                a8=0;
+            }
+            let o=document.getElementById("b7").value;
+            let p=document.getElementById("t7").value;
+            if(o==p){
+                a9=1;
+            }
+            else{
+                a9=0;
+            }
+            let q=document.getElementById("b8").value;
+            let r=document.getElementById("t8").value;
+            if(q==r){
+                a10=1;
+            }
+            else{
+                a10=0;
+            }
+            let s=document.getElementById("b9").value;
+            let t=document.getElementById("t9").value;
+            if(s==t){
+                a11=1;
+            }
+            else{
+                a11=0;
+            }
+            let c=document.getElementById("b10").value;
+            let d=document.getElementById("t10").value;
+            if(c==d){
+                a3=1;
+            }
+            else{
+                a3=0;
+            }
+            a1=a2+a3+a4+a5+a6+a7+a8+a9+a10+a11;
+            document.getElementById("hid1").style.display="block";
+           document.getElementById("p").innerHTML=a1;
+           if(a1==10){
+            document.getElementById("p1").innerHTML="Hurrah! You Nailed it ";
+           }
+           else if(a1==9){
+            document.getElementById("p1").innerHTML="Oops! One misssed...";
+           }
+           else{
+            document.getElementById("p1").innerHTML="OOps! Try again You can do it";
+           }
+            
+        }
+    </script>
+</html>

@@ -1,0 +1,95 @@
+.ti{
+    padding: 2%;
+    padding-left: 18%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 254, 254);
+    text-shadow: 1.5px 1.5px grey;
+    font-size: 52px;
+}
+.full{
+    margin-left: 31%;
+   
+}
+.cl{
+    display: flex;
+    
+}
+button{
+    border: none;
+    margin-bottom: 4%;
+    padding: 13%;
+    border-radius: 8px;
+    
+}
+.box{
+   border: none;
+    border-radius: 10px;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    text-align: center;
+    box-shadow: inset 1px 1px;
+    
+}
+.bo{
+    background-color: red;
+}
+.bo1{
+    background-color: yellow;
+}
+.bo2{
+    background-color: brown;
+}
+.bo3{
+    background-color: blue;
+}
+.bo4{
+    background-color: violet;
+}
+.bo5{
+    background-color: green;
+}
+.bo6{
+    background-color: grey;
+}
+.bo7{
+    background-color: orange;
+}
+.bo8{
+    background-color: skyblue;
+}
+.bo9{
+    background-color: pink;
+}
+.full1{
+    display: flex;
+}
+.hid{
+    display: none;
+    padding: 2%;
+    margin-left: 16%;
+    margin-top: 3%;
+    color: rgb(24, 24, 24);
+    background-color: rgb(241, 246, 246);
+    margin-bottom: 25%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 11px;
+    box-shadow: 2px 2px grey;
+}
+.s{
+    color: white;
+    background-color: rgb(131, 131, 231);
+    padding-right: 48%;
+    padding-left: 48%;
+    padding-bottom: -20%;
+    margin-top: 10%;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 1px 1px rgb(0, 0, 0);
+}
+.s:hover{
+    transform: scale(1.1,1.1);
+}
+.bg{
+    background-image: linear-gradient(40deg,rgb(112, 234, 195),rgb(134, 134, 201),rgb(234, 193, 116));
+}
